@@ -7,22 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="49,22,0,0" 
+        <TextBox HorizontalAlignment="Left" Margin="153,29,0,0" 
                  Text="osvita.ua"  Name="ipTextbox"
                  TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
-        <TextBox HorizontalAlignment="Left" Margin="49,53,0,0" 
+        <TextBox HorizontalAlignment="Left" Margin="153,58,0,0" 
             Text="80"  x:Name="portTextbox"
             TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
-        <TextBox HorizontalAlignment="Left" Margin="49,84,0,0" 
+        <TextBox HorizontalAlignment="Left" Margin="153,87,0,0" 
             Text="/"  x:Name="fileTextbox"
             TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
-        <TextBox HorizontalAlignment="Left" Margin="49,121,0,0" 
+        <TextBox HorizontalAlignment="Left" Margin="153,120,0,0" 
             Text="C:\Users\Admin\Desktop\Images\"  x:Name="downloadFolderTextbox"
             TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
-        <Button Content="Download Jpg" Name="downloadButton" 
-                HorizontalAlignment="Left" Margin="211,165,0,0" VerticalAlignment="Top" Click="downloadButton_Click"/>
-        <Label Name="statusLabel"  Content="No results yet" HorizontalAlignment="Left" Margin="49,217,0,0" VerticalAlignment="Top"/>
-        <Label Name="errorLabel"  Content="No exceptions" HorizontalAlignment="Left" Margin="49,257,0,0" VerticalAlignment="Top"/>
+        <Label Name="statusLabel"  Content="No results yet" HorizontalAlignment="Left" Margin="49,247,0,0" VerticalAlignment="Top"/>
+        <Label Name="errorLabel"  Content="No exceptions" HorizontalAlignment="Left" Margin="49,287,0,0" VerticalAlignment="Top"/>
+        <Button Content="Download Jpg using HttpClient" Name="downloadHttpButton" 
+                HorizontalAlignment="Left" Margin="49,169,0,0" VerticalAlignment="Top" Click="downloadButton_Click"/>
+        <Button Content="Download Jpg using TCP client" x:Name="downloadTcpButton" 
+            HorizontalAlignment="Left" Margin="49,202,0,0" VerticalAlignment="Top" Click="downloadButton_Click"/>
+        <Label Content="IP/DNS address" HorizontalAlignment="Left" Margin="49,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="Port" HorizontalAlignment="Left" Margin="49,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="File name" HorizontalAlignment="Left" Margin="49,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Download folder" HorizontalAlignment="Left" Margin="49,116,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
