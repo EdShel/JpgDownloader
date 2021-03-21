@@ -1,0 +1,28 @@
+﻿<Window x:Class="JpgDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JpgDownloader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="49,22,0,0" 
+                 Text="osvita.ua"  Name="ipTextbox"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox HorizontalAlignment="Left" Margin="49,53,0,0" 
+            Text="80"  x:Name="portTextbox"
+            TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox HorizontalAlignment="Left" Margin="49,84,0,0" 
+            Text="/"  x:Name="fileTextbox"
+            TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox HorizontalAlignment="Left" Margin="49,121,0,0" 
+            Text="C:\Users\Admin\Desktop\Images\"  x:Name="downloadFolderTextbox"
+            TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <Button Content="Download Jpg" Name="downloadButton" 
+                HorizontalAlignment="Left" Margin="211,165,0,0" VerticalAlignment="Top" Click="downloadButton_Click"/>
+        <Label Name="statusLabel"  Content="No results yet" HorizontalAlignment="Left" Margin="49,217,0,0" VerticalAlignment="Top"/>
+        <Label Name="errorLabel"  Content="No exceptions" HorizontalAlignment="Left" Margin="49,257,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
